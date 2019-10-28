@@ -1,4 +1,9 @@
 from flask import Flask, request, render_template
+import numpy as np
+import spacy
+import en_core_web_sm
+
+nlp = en_core_web_sm.load()
 
 app = Flask(__name__)
 
