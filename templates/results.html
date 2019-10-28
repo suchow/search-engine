@@ -1,0 +1,9 @@
+<!doctype html>
+<title>Searchy results</title>
+<h1>My search engine</h1>
+<p>Results for <code>{{ query }}</code>:</p>
+<ol>
+{% for result in results %}
+  <li><a href="{{ result }}" target="_blank">{{ result }}</a></li>
+{% endfor %}
+</ol>
